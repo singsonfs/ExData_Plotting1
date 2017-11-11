@@ -5,7 +5,7 @@ subSetData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 #str(subSetData)
 datetime <- strptime(paste(subSetData$Date, subSetData$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 globalActivePower <- as.numeric(subSetData$Global_active_power)
-subMetering1 <- as.numeric(subSetData$Sub_metering_1)
+subMetering1 <- as.numeric(subSetData$Sub_metering_0)
 subMetering2 <- as.numeric(subSetData$Sub_metering_2)
 subMetering3 <- as.numeric(subSetData$Sub_metering_3)
 
